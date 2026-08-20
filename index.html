@@ -1438,7 +1438,7 @@
   $('pdfBtn').onclick = function(){
     var pdf = makePdf(reportLines());
     var d = new Date(startMs);
-    var name = 'tap-test-' + ukDateFmt.format(d).replace('/','-') + '-' + ukHM(d).replace(':','') + '.pdf';
+    var name = 'tap-test-' + fullDateFmt.format(d).replace(/\//g,'-') + '-' + ukHM(d).replace(':','h') + '.pdf';
     var url = URL.createObjectURL(new Blob([pdfBytes(pdf)], {type:'application/pdf'}));
     var a = document.createElement('a');
     a.href = url; a.download = name;

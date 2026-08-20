@@ -1,5 +1,5 @@
 /* Tap Test — cache para funcionamento offline */
-const CACHE = 'tap-test-v42';
+const CACHE = 'tap-test-v43';
 const FILES = [
   './',
   './index.html',
